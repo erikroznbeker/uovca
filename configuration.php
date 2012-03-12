@@ -40,17 +40,20 @@ class Config {
 		'korisnici'=>array(
 			'label'=>'Korisnici',
 			//'access'=>array('1'),
-			'module'=>'users'
+			'module'=>'users',
+			'hidden'=>true
 		),
 		'login'=>array(
 			'label'=>'Prijava',
 			//'access'=>array('1'),
-			'module'=>'login'
+			'module'=>'login',
+			'hidden'=>true
 		),
 		'logout'=>array(
 			'label'=>'Odjava',
 			//'access'=>array('1'),
-			'module'=>'login'
+			'module'=>'login',
+			'hidden'=>true
 		)
 	);
 	

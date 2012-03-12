@@ -14,7 +14,9 @@ body{
   src: url('armata.woff') format('woff');
 }
 
-
+#wrapper{
+	width:100%;
+}
 
 #content{
 	width:100%;
@@ -24,11 +26,28 @@ body{
 	clear:both;
 }
 
+#header{
+	width:100%;
+	background:#FFF;
+	/*border-bottom:solid 1px #333;*/
+}
+
+#header h1{
+	background: url(../images/uovca.png) left no-repeat;
+	font-family: 'armata';
+	font-size: 25pt;
+	color:#000;
+	padding-left:100px;
+	margin:0;
+	float:left;
+}
+
+
 /*****************************************************************************/
 /*********************************** MODULI **********************************/
 /*****************************************************************************/
 
-/*login*/
+/*** login ***/
 #login{
 	margin:100 auto 0 auto;
 	width:500px;
@@ -85,4 +104,14 @@ body{
 	opacity: 0.9;
 	display:none;
 }
-	
+
+/*** bigtime ***/
+#bigtime{
+	float:right;
+	font-size: 25pt;
+	padding-right:5px;
+	color:#666;
+}
+#btsec{
+	color:#CCC;
+}

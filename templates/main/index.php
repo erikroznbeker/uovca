@@ -15,10 +15,12 @@ defined('_UOVCA') or die();
   <div id="wrapper">
   	<?php if(Template::show('header')):?>
 		<div id="header">
+			<h1>UOVCA</h1>
 			{module::bigtime}
 			<div id="menu">
-				{-module::menu}
+				{module::menu}
 			</div>
+			<div class="clr"></div>
 		</div>
 	<?php endif;?>
 		<div id="content">

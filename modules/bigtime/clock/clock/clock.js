@@ -1,28 +1,38 @@
 $(document).ready(function(){
-	var dt = new Date();
-	var t = {
-		day: weekDay(dt.getDay()),
-		date: zpad(dt.getDate()),
-		month: zpad(dt.getMonth()+1),
-		year: dt.getFullYear(),
-		hour: zpad(dt.getHours()),
-		min: zpad(dt.getMinutes()),
-		sec: zpad(dt.getSeconds())
-	}
 	
-	
-	$('#bigtime').text(t.day+', '+t.date+'.'+t.month+'.'+t.year+' - '+t.hour+':'+t.min+':'+t.sec);
-	
+	var t = {}
+	var BTsec = null;
+	niceTime();//first run
 	
 	function niceTime(){
 		
+		var dt = new Date();
+		t = {
+			day: weekDay(dt.getDay()),
+			date: zpad(dt.getDate()),
+			month: zpad(dt.getMonth()+1),
+			year: dt.getFullYear(),
+			hour: zpad(dt.getHours()),
+			min: zpad(dt.getMinutes()),
+			sec: dt.getSeconds()
+		}
 		
+		$('#bigtime').html(t.day+', '+t.date+'.'+t.month+'.'+t.year+' &nbsp; '+t.hour+':'+t.min+'<span id="btsec">:'+zpad(t.sec)+'</span>');
 		
-		
-		
-		
-		
+		clearInterval(BTsec);
+		BTsec = setInterval(BTsecUpdate, 1000);
 	}
+	
+	function BTsecUpdate(){
+		if(t.sec && t.sec==59){
+			niceTime();
+		}
+		else {
+			t.sec++;
+			$('#btsec').text(':'+zpad(t.sec));
+		}
+	}
+	
 	
 	function weekDay(index){
 		var day =['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'];
