@@ -1,0 +1,88 @@
+body{
+	padding:0;
+	margin: 0;
+	background:#EEE;
+	font-family: arial;
+	font-size: 14pt;
+	color:#333;
+}
+
+@font-face {
+  font-family: 'armata'; /*'Shadows Into Light Two';*/
+  font-style: normal;
+  font-weight: normal;
+  src: url('armata.woff') format('woff');
+}
+
+
+
+#content{
+	width:100%;
+}
+
+.clr{
+	clear:both;
+}
+
+/*****************************************************************************/
+/*********************************** MODULI **********************************/
+/*****************************************************************************/
+
+/*login*/
+#login{
+	margin:100 auto 0 auto;
+	width:500px;
+	box-shadow: 0 0 5px #888;
+	padding:15px;
+	background:#FFF url(../images/uovca.png) center 10px no-repeat;
+}
+
+#login h1{
+	font-family: 'armata';
+	margin:0;
+	padding:90px 0 0 0;
+	text-align:center;
+	font-size: 25pt;
+	color:#000;
+}
+
+#login label{
+	float:left;
+	width:110px;
+	padding:5px;
+	margin:5px;
+}
+
+#login .input{
+	float:left;
+	width:350px;
+	padding:5px;
+	margin:5px;
+	border: solid 1px #CCC;
+	font-size: 14pt;
+}
+
+#login .checkbox{
+	margin-top:15px;	
+}
+
+#login #button_submit{
+	float:right;
+	margin:15px 15px 0 0;
+	font-size: 14pt;
+}
+
+#tooltip{
+	border-radius: 10px;
+	border:3px solid #f55858;
+	width:300px;
+	padding:10px;
+	text-align:center;
+	background:#ddd;
+	color: #FF0000;
+	position: absolute;
+	margin:55px 0 0 90px;
+	opacity: 0.9;
+	display:none;
+}
+	
