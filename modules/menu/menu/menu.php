@@ -14,7 +14,13 @@ class MenuMenu {
 		$items = array();
 		$menu = Config::get('menu');
 		
+		foreach($menu as $item){			
+			if(!isset($item['hidden']) || !$item['hidden']){
+				$items[] = $item;
+			}
+		}
 		
+		print_r($items);
 		
 		
 		

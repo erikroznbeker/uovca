@@ -29,29 +29,28 @@ class Config {
 	static $menu = array(
 		'main'=>array(
 			'label'=>'Naslovnica',
-			//'access'=>array('0'),
 			'module'=>'panel'
 		),
 		'imenik'=>array(
 			'label'=>'Imenik',
-			//'access'=>array('0'),
 			'module'=>'addressbook'
+		),
+		'klijenti'=>array(
+			'label'=>'Klijenti',
+			'module'=>'klijenti'
 		),
 		'korisnici'=>array(
 			'label'=>'Korisnici',
-			//'access'=>array('1'),
 			'module'=>'users',
 			'hidden'=>true
 		),
 		'login'=>array(
 			'label'=>'Prijava',
-			//'access'=>array('1'),
 			'module'=>'login',
 			'hidden'=>true
 		),
 		'logout'=>array(
 			'label'=>'Odjava',
-			//'access'=>array('1'),
 			'module'=>'login',
 			'hidden'=>true
 		)

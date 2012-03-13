@@ -17,7 +17,7 @@ $(document).ready(function(){
 			sec: dt.getSeconds()
 		}
 		
-		$('#bigtime').html(t.day+', '+t.date+'.'+t.month+'.'+t.year+' &nbsp; '+t.hour+':'+t.min+'<span id="btsec">:'+zpad(t.sec)+'</span>');
+		$('#bigtime').html('<span class="ccc">'+t.day+',</span> '+t.date+'.'+t.month+'.'+t.year+' &nbsp; '+t.hour+':'+t.min+'<span id="btsec" class="ccc">:'+zpad(t.sec)+'</span>');
 		
 		clearInterval(BTsec);
 		BTsec = setInterval(BTsecUpdate, 1000);
